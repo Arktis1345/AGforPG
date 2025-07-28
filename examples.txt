@@ -1,0 +1,38 @@
+big_desargues
+a c g = triangle a c g; e = free; b = on_line a c; d = on_line a e, on_pline b e c; f = on_line a g, on_pline d g e ? para g c f b
+pappos
+a b = segment; c = on_line a b; f g = segment; d = free; c = on_line a g, on_line b f; h = on_line a b, on_line d f; i = on_line f g, on_line a d; e = on_line b i, on_line g h ? coll c d e
+miguel
+o1 = free; o2 = free; o3 = free; o4 = free; o5 = free; a = free; b = on_circle o1 a, on_circle o2 a; c = on_circle o1 a, on_circle o3 b; d = on_circle o1 a, on_circle o4 c, on_circle o5 a; e = on_circle o2 a, on_circle o5 a; f = on_circle o2 a, on_circle o3 b; g = on_circle o3 b, on_circle o4 c; h = on_circle o4 c, on_circle o5 a ? cyclic e f g h
+pappos_triangle
+a b c = triangle; p1 = on_line a b; p2 = on_line b c, on_pline p1 a c; p3 = on_line a c, on_pline p2 a b; p4 = on_line a b, on_pline p3 b c; p5 = on_line b c, on_pline p4 a c; p6 = on_line a c, on_pline p5 a b ? para p6 p1 b c
+pascal
+a o = segment; b = on_circle o a; c = on_circle o a; d = on_circle o a; e = on_circle o a; f = on_circle o a; x = on_line a e, on_line b d; y = on_line a f, on_line c d; z = on_line b f, on_line c e ? coll x y z
+pappos3
+a b = segment; d = free; e = on_pline d a b; g = on_line a e, on_line b d; c = on_line a b, on_pline e b d; f = on_line d e, on_pline b a e; h = on_line a f, on_line c d; i = on_line b f, on_line c e ? coll g h i
+pappos1
+a b = segment; d = free; e = on_pline d a b; g = on_line a e, on_line b d; c = on_line a b; f = on_line d e; h = on_line a f, on_line c d; i = on_line b f, on_line c e ? coll g h i
+pappos2
+a b = segment; d = free; e = on_pline d a b; g = on_line a e, on_line b d; c = on_line a b; f = on_line d e, on_pline b a e; h = on_line a f, on_line c d; i = on_line b f, on_line c e ? coll g h i
+pappos4
+a b = segment; d e = segment; g = on_line a e, on_line b d; c = on_line a b; f = on_line d e, on_pline b a e; h = on_line a f, on_line c d; i = on_line b f, on_line c e ? coll g h i
+pappos5
+a b = segment; d e = segment; g = on_line a e, on_line b d; c = on_line a b, on_pline e b d; f = on_line d e, on_pline b a e; h = on_line a f, on_line c d; i = on_line b f, on_line c e ? coll g h i
+big_pappos
+a b = segment; c = on_line a b; d = free; e = on_pline c d b; f = on_pline b e a, on_line d e ? para d a f c
+hessenberg1
+a c g = triangle a c g; e = free; b = on_line a c; d = on_line a e, on_pline b e c; f = on_line a g, on_pline d g e; h = on_line a d, on_pline b f g; i = on_line f b, on_pline h d f; j = on_line c e, on_line g i ? para g c f b
+dual_pappos
+a b = segment; c = on_line a b; d = free; e = on_line a d; f = on_line c e; g = on_line d f; h = on_line b f, on_line a g; i = on_line b d, on_line c g ? coll e h i
+dual_pappos_affine
+a b = segment; c = free; d = on_pline c a b; e = on_pline b a c; f = on_pline e a b, on_pline d a c; g = on_line a f, on_line b d ? coll c e g
+brianchon
+a b = segment; c = on_circle a b; d = on_circle a b; e = on_circle a b; f = on_circle a b; g = on_circle a b; h = on_tline b a, on_tline c a; i = on_tline d a, on_tline c a; j = on_tline d a, on_tline e a; k = on_tline e a, on_tline f a; l = on_tline f a, on_tline g a; m = on_tline b a, on_tline g a; n = on_line h k, on_line i l ? coll j m n
+brianchon2
+a b = segment; c = on_circle a b; d = on_circle a b; e = on_circle a b; f = on_circle a b; g = on_circle a b; h1 = on_tline b a; h2 = on_tline c a; h = intersection_lt h1 h2; i1 = on_tline d a; i2 = on_tline c a; i = intersection_lt i1 i2; j1 = on_tline d a; j2 = on_tline e a; j = intersection_lt j1 j2; k1 = on_tline e a; k2 = on_tline f a; k = intersection_lt k1 k2; l1 = on_tline f a; l2 = on_tline g a; l = intersection_lt l1 l2; m1 = on_tline b a; m2 = on_tline g a; m = intersection_lt m1 m2; n = intersection_lt h k, i l ? coll j m n
+desargues
+a c = segment; b = on_line a c; d = free; e = free; f = on_line c e; h = on_line a d; i = on_line a f, on_line b e; j = on_line c h, on_line b d; g = on_line i d, on_line j e ? coll f g h
+permutation
+a b = segment; c d = segment; e f = segment; g = on_line a b, on_line c e, on_line d f; h = on_line a e, on_line b f, on_line c d; i = on_line a f, on_line b e, on_line c d; j = on_line a b, on_line c f ? coll d e j
+ten_point_hinf
+a d = segment; b e = segment; j = on_line b d; g = on_line a d, on_line b e; f = on_line d e, on_pline g a j; i = on_pline e f g, on_line b f; c = on_line g i, on_line f j, on_pline d f g ? coll a b c
