@@ -9,6 +9,4 @@ With solve.sh and examples.txt in the root of AG, solve.sh can be called to star
 
 The Cindersella tool can be used by saving a proof in the input.txt file and running the entire Cinderella notebook.
 
-The alphageometry folder contains our full unorganized setup for reference, but we recommend to clone AG from the original repository.
-
 The Konstruktionen folder contains constructions used for the thesis, some of which are visualized with our tool.
