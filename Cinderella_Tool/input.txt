@@ -1,0 +1,30 @@
+ * From theorem premises:
+A B C D E F G : Points
+B,E,A are collinear [00]
+FE ∥ DB [01]
+D,F,A are collinear [02]
+G,C,A are collinear [03]
+GF ∥ CD [04]
+
+ * Auxiliary Constructions:
+H I J : Points
+H,F,A are collinear [05]
+HE ∥ GC [06]
+I,E,G are collinear [07]
+IH ∥ FG [08]
+I,C,J are collinear [09]
+B,D,J are collinear [10]
+
+ * Proof steps:
+001. C,G,A are collinear [03] & HE ∥ GC [06] ⇒  EH ∥ GA [11]
+002. I,E,G are collinear [07] & F,H,A are collinear [05] & HI ∥ FG [08] & EH ∥ GA [11] (ASA)⇒  EF ∥ IA [12]
+003. B,D,J are collinear [10] & EF ∥ AI [12] & EF ∥ BD [01] ⇒  JB ∥ IA [13]
+004. H,F,A are collinear [05] & D,F,A are collinear [02] ⇒  H,D,A are collinear [14]
+005. B,D,J are collinear [10] & EF ∥ AI [12] & EF ∥ BD [01] ⇒  DJ ∥ AI [15]
+006. FG ∥ CD [04] & HI ∥ FG [08] ⇒  HI ∥ DC [16]
+007. H,D,A are collinear [14] & I,C,J are collinear [09] & DJ ∥ AI [15] & HI ∥ DC [16] (ASA)⇒  HJ ∥ AC [17]
+008. HE ∥ GC [06] & G,C,A are collinear [03] & HJ ∥ AC [17] ⇒  HJ ∥ HE [18]
+009. HJ ∥ HE [18] ⇒  H,E,J are collinear [19]
+010. H,E,J are collinear [19] & HE ∥ GC [06] & G,C,A are collinear [03] ⇒  CA ∥ JE [20]
+011. I,C,J are collinear [09] & B,E,A are collinear [00] & JB ∥ IA [13] & CA ∥ JE [20] (ASA)⇒  CB ∥ IE [21]
+012. CB ∥ IE [21] & I,E,G are collinear [07] ⇒  BC ∥ EG
