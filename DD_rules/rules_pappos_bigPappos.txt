@@ -1,0 +1,2 @@
+coll a b h, coll f g i, coll a c g, coll a d i, coll b c f, coll b e i, coll h d f, coll h e g => coll c d e
+coll a b c, coll d e f, para b d c e, para a e b f => para a d c f
